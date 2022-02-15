@@ -56,10 +56,10 @@ fieldset > .inputs > div {
     display: flex;
     flex-direction: column;
     min-width: 30%;
+    margin-bottom: 20px;
 }
 
 fieldset > .inputs > div > input {
-    margin-bottom: 20px;
     border-color: #E5E7EB;
     border-style: solid;
     border-radius: 6px;
@@ -73,6 +73,11 @@ fieldset > .inputs > div > input.focus {
 
 fieldset > .inputs > div > input.error {
     border-color: red;
+}
+
+fieldset > .inputs > div > .errorStatus {
+    font-size:10px;
+    color: red;
 }
 
 form > button {

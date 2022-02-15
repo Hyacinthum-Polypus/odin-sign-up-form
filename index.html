@@ -20,17 +20,17 @@
                 <fieldset>
                     <h2>Let's do this!</h2>
                     <div class="inputs">
-                        <div><label for="userFirstName">FIRST NAME</label><input type="text" id="userFirstName"></div>
-                        <div><label for="userLastName">LAST NAME</label><input type="text" id="userLastName" class="focus"></div>
-                        <div><label for="userEmail">EMAIL</label><input type="email" id="userEmail"></div>
-                        <div><label for="userPhoneNumber">PHONE NUMBER</label><input type="tel" id="userPhoneNumber"></div>
-                        <div><label for="userPassword">PASSWORD</label><input type="password" id="userPassword" class="error"></div>
-                        <div><label for="userConfirmPassword">CONFIRM PASSWORD</label><input type="password" id="userConfirmPassword" class="error"></div>
+                        <div><label for="userFirstName">FIRST NAME</label><input type="text" id="userFirstName" required></div>
+                        <div><label for="userLastName">LAST NAME</label><input type="text" id="userLastName" class="focus" required></div>
+                        <div><label for="userEmail">EMAIL</label><input type="email" id="userEmail" required></div>
+                        <div><label for="userPhoneNumber">PHONE NUMBER</label><input type="tel" id="userPhoneNumber" required></div>
+                        <div><label for="userPassword">PASSWORD</label><input type="password" id="userPassword" class="error" required><span class="errorStatus">* Passwords do not match</span></div>
+                        <div><label for="userConfirmPassword">CONFIRM PASSWORD</label><input type="password" id="userConfirmPassword" class="error" required></div>
                     </div>
                 </fieldset>
                <button type="submit">Create Account</button>
             </form>
-            <div class="login">Already have an account? <a href="./login">Log in</a></div>
+            <div class="login">Already have an account? <a href="#">Log in</a></div>
 
 
             
