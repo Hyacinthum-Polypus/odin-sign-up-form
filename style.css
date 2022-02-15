@@ -1,7 +1,7 @@
-@font-face {
-    font-family: NorthBold;
-    src: url("./fonts/Norse-Bold.otf") format("opentype");
+:root {
+    --main-padding: 0 100px;
 }
+
 
 body {
     display: flex;
@@ -10,18 +10,97 @@ body {
     margin: 0;
 }
 
+@font-face {
+    font-family: NorthBold;
+    src: url("./fonts/Norse-Bold.otf") format("opentype");
+}
+
 main {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+    padding: 10vh 0;
+    height: 100vh;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+main > * {
+    padding: var(--main-padding);
+}
+
+main > form {
+    padding: 0;
+}
+
+main > p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+fieldset {
+    background-color: white;
+    border: none;
+    padding: var(--main-padding);
+    padding-bottom: 35px;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+
+fieldset > .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+}
+
+fieldset > .inputs > div {
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+}
+
+fieldset > .inputs > div > input {
+    margin-bottom: 20px;
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-radius: 6px;
+    padding: 4px 4px;
+}
+
+fieldset > .inputs > div > input.focus {
+    border-color: lightskyblue;
+    box-shadow: 3px 3px 5px lightgray
+}
+
+fieldset > .inputs > div > input.error {
+    border-color: red;
+}
+
+form > button {
+    margin: var(--main-padding);
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-color: #596D48;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 6px;
+}
+
+.login > a {
+    color: #596D48;
+    text-decoration: none;;
 }
 
 aside {
+    flex: 0 0 auto;
     position: relative;
     height: 100vh;
 }
 
 aside > img {
     height: 100%;
-    width: auto;
 }
 
 .logo {
