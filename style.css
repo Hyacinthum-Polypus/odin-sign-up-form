@@ -59,6 +59,10 @@ fieldset > .inputs > div {
     margin-bottom: 20px;
 }
 
+fieldset > .inputs > div > label {
+    font-size: 10px;
+}
+
 fieldset > .inputs > div > input {
     border-color: #E5E7EB;
     border-style: solid;

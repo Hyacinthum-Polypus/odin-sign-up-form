@@ -16,14 +16,14 @@
             </p>
             <p>You <em>know</em> you want to.</p>
 
-            <form action="./signup" method="POST">
+            <form action="#" method="POST">
                 <fieldset>
                     <h2>Let's do this!</h2>
                     <div class="inputs">
                         <div><label for="userFirstName">FIRST NAME</label><input type="text" id="userFirstName" required></div>
                         <div><label for="userLastName">LAST NAME</label><input type="text" id="userLastName" class="focus" required></div>
                         <div><label for="userEmail">EMAIL</label><input type="email" id="userEmail" required></div>
-                        <div><label for="userPhoneNumber">PHONE NUMBER</label><input type="tel" id="userPhoneNumber" required></div>
+                        <div><label for="userPhoneNumber">PHONE NUMBER</label><input type="tel" id="userPhoneNumber" pattern="\d*" title="Phone number can only use numbers." required></div>
                         <div><label for="userPassword">PASSWORD</label><input type="password" id="userPassword" class="error" required><span class="errorStatus">* Passwords do not match</span></div>
                         <div><label for="userConfirmPassword">CONFIRM PASSWORD</label><input type="password" id="userConfirmPassword" class="error" required></div>
                     </div>
